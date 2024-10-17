@@ -64,41 +64,41 @@ class Lang {
 
   public:
     String mo() {
-      if(config.lang() == "ru") return "Пн";
+      if(config.lang() == "ru") return "Пнд";
       if(config.lang() == "bg") return "По";
       return "Mo";  
     }
 
     String tu() {
-      if(config.lang() == "ru" or config.lang() == "bg") return "Вт";
+      if(config.lang() == "ru" or config.lang() == "bg") return "Втр";
       else return "Tu";  
     }
 
     String we() {
-      if(config.lang() == "ru" or config.lang() == "bg") return "Ср";
+      if(config.lang() == "ru" or config.lang() == "bg") return "Срд";
       return "We";  
     }
 
     String th() {
-      if(config.lang() == "ru") return "Чт";
+      if(config.lang() == "ru") return "Чтв";
       if(config.lang() == "bg") return "Че";
       return "Th";  
     }
 
     String fr() {
-      if(config.lang() == "ru") return "Пт";
+      if(config.lang() == "ru") return "Птн";
       if(config.lang() == "bg") return "Пе";
       return "Fr";  
     }
 
     String sa() {
-      if(config.lang() == "ru") return "Сб";
+      if(config.lang() == "ru") return "Сбт";
       if(config.lang() == "bg") return "Съ";
       return "Sa";  
     }
 
     String su() {
-      if(config.lang() == "ru") return "Вс";
+      if(config.lang() == "ru") return "Вск";
       if(config.lang() == "bg") return "Не";
       return "Su";  
     }
