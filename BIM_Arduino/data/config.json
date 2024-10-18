@@ -1,21 +1,29 @@
 {
 	"comfort": {
 		"temp": {
-			"source": 0,
+			"source": 3,
 			"thing": 0,
 			"min": 21,
 			"max": 25
 		},
 		"hum": {
-			"source": 0,
+			"source": 3,
 			"thing": 0,
 			"min": 30,
 			"max": 60
 		}
 	},
 	"network": {
-		"ssid": ["", "", ""],
-		"pass": ["", "", ""],
+		"ssid": [
+			"Asus_home",
+			"",
+			""
+		],
+		"pass": [
+			"11111111",
+			"",
+			""
+		],
 		"ip": "",
 		"mask": "",
 		"gw": "",
@@ -31,35 +39,38 @@
 		"mask": "255.255.255.0"
 	},
 	"weather": {
-		"appid": ["",""],
+		"appid": [
+			"",
+			"172ad1dc4b4e4284ac4d47bdffc93ba5"
+		],
 		"city": "",
 		"cityid": 0,
-		"lat": 0,
-		"lon": 0,
+		"lat": 50.38392205335758,
+		"lon": 30.447583507375462,
 		"provider": 0,
 		"citysearch": 0,
 		"parsingServer": ""
 	},
-	"lang": "en",
+	"lang": "ru",
 	"clock": {
 		"format": 0,
 		"ntp": "time.nist.gov",
-		"utc": 0,
-		"dlst": 0,
+		"utc": 2,
+		"dlst": 1,
 		"ntp_period": 15
 	},
 	"display": {
 		"dayTime": "07:00",
 		"nightTime": "21:00",
-		"brightMethod": 3,
+		"brightMethod": 1,
 		"brightness": {
 			"day": 100,
 			"night": 50,
 			"min": 1,
 			"max": 255
 		},
-		"lightSensor": 0,
-		"sensitivity": 50,
+		"lightSensor": 2,
+		"sensitivity": 19,
 		"source": {
 			"tempOut": {
 				"sens": 1,
@@ -70,15 +81,15 @@
 				"thing": 0
 			},
 			"presOut": {
-				"sens": 1,
+				"sens": 3,
 				"thing": 0
 			},
 			"tempIn": {
-				"sens": 0,
+				"sens": 3,
 				"thing": 0
 			},
 			"humIn": {
-				"sens": 0,
+				"sens": 3,
 				"thing": 0
 			},
 			"volt": {
@@ -90,12 +101,12 @@
 				"sens": 0,
 				"thing": 0
 			},
-			"descr": 0
+			"descr": 1
 		}
 	},
 	"sensors": {
 		"bme280": {
-			"t": 0,
+			"t": -2.6,
 			"h": 0,
 			"p": 0
 		},
@@ -118,26 +129,44 @@
 			"l": 0
 		},
 		"bh1750": {
-			"l": 0
+			"l": 7.5
 		},
-		"analog":{
+		"analog": {
 			"v": 0
 		}
 	},
 	"thingspeakSend": {
 		"turnOn": 0,
 		"period": 5,
-		"channelID": "",
-		"wrkey": "",
+		"channelID": "2684279",
+		"wrkey": "WQD4QV87PV2JS7RU",
 		"rdkey": "",
-		"fields": [0,0,0,0,0,0,0,0],
-		"types": [0,0,0,0,0,0,0,0]
+		"fields": [
+			2,
+			2,
+			2,
+			1,
+			1,
+			1,
+			0,
+			0
+		],
+		"types": [
+			0,
+			1,
+			2,
+			0,
+			1,
+			2,
+			0,
+			0
+		]
 	},
 	"thingspeakReceive": {
 		"turnOn": 0,
 		"period": 5,
-		"channelID": "",
-		"rdkey": "",
+		"channelID": "2684279",
+		"rdkey": "R7P1Z6HOR13NMHYA",
 		"expire": 20
 	},
 	"narodmonSend": {
@@ -146,13 +175,65 @@
 		"lat": "",
 		"lon": "",
 		"name": "bim",
-		"sensors": [0,0,0,0,0,0,0,0,0,0,0,0],
-		"types": [0,0,0,0,0,0,0,0,0,0,0,0],
-		"thing": [0,0,0,0,0,0,0,0,0,0,0,0],
-		"metrics": ["A","B","C","D","E","F","G","H","I","J","K","L"]
+		"sensors": [
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		"types": [
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		"thing": [
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		"metrics": [
+			"A",
+			"B",
+			"C",
+			"D",
+			"E",
+			"F",
+			"G",
+			"H",
+			"I",
+			"J",
+			"K",
+			"L"
+		]
 	},
 	"account": {
-		"name": "admin",
+		"name": "",
 		"required": 0
 	}
 }
