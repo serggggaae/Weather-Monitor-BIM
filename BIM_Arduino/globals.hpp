@@ -98,7 +98,7 @@ class Config {
   unsigned int _display_brightness_day = 50; // Day mode brightness: 1...100
   unsigned int _display_brightness_night = 50; // Night mode brightness: 1...100
   unsigned int _display_lightSensor = 1; // Sensor type for brightness adjust: 0-Analog input, 1-MAX44009, 2-BH1750
-  unsigned int _display_lightSensor_sensitivity = 50; // Ambient light sensor sensibility: 1...100
+  unsigned int _display_sensitivity = 50; // Ambient light sensor sensibility: 1...100
   unsigned int _display_source_tempOut_sens = 0; // Outdoor temperature data source: 0-Forecast, 1-Thingspeak, 2-BME280, 3-BMP180, 4-SHT21, 5-DHT22, 6-DS18B20
   unsigned int _display_source_tempOut_thing = 0; // Thingspeak field number for the outdoor temperature: 0...7
   unsigned int _display_source_humOut_sens = 0; // Outdoor humidity data source: 0-Forecast, 1-Thingspeak, 2-BME280, 3-SHT21, 4-DHT22
@@ -238,7 +238,7 @@ class Config {
           COPYNUM(conf["display"]["brightness"]["day"], _display_brightness_day);
           COPYNUM(conf["display"]["brightness"]["night"], _display_brightness_night);
           COPYNUM(conf["display"]["lightSensor"], _display_lightSensor);
-          COPYNUM(conf["display"]["lightSensor_sensitivity"], _display_lightSensor_sensitivity);
+          COPYNUM(conf["display"]["sensitivity"], _display_sensitivity);
           COPYNUM(conf["display"]["source"]["tempOut"]["sens"], _display_source_tempOut_sens);
           COPYNUM(conf["display"]["source"]["tempOut"]["thing"], _display_source_tempOut_thing);
           COPYNUM(conf["display"]["source"]["humOut"]["sens"], _display_source_humOut_sens);
@@ -526,9 +526,9 @@ class Config {
     return _display_lightSensor;
   }
 
-  unsigned int display_lightSensor_sensitivity() {
-    if(_display_lightSensor_sensitivity < 1 or _display_lightSensor_sensitivity > 100) return 50;
-    return _display_lightSensor_sensitivity;
+  unsigned int display_sensitivity() {
+    if(_display_sensitivity < 1 or _display_sensitivity > 100) return 50;
+    return _display_sensitivity;
   }
 
   unsigned int display_source_tempOut_sens() {
@@ -819,6 +819,6 @@ class Config {
   }
 
   void set_sensitivity(int sensitivity) {
-    if(sensitivity >= 1 and sensitivity <= 100) _display_lightSensor_sensitivity = sensitivity;
+    if(sensitivity >= 1 and sensitivity <= 100) _display_sensitivity = sensitivity;
   }
 };

@@ -294,7 +294,7 @@ unsigned int get_brightness() {
       if(config.display_lightSensor() == 2) {
         bright = sensors.checkLight(sensors.get_bh1750_light(config.bh1750_light_corr())) ? sensors.get_bh1750_light(config.bh1750_light_corr()) : 50;
       }
-      bright *= (float)config.display_lightSensor_sensitivity() / 20.0;
+      bright *= (float)config.display_sensitivity() / 20.0;
       if(bright < 1.0) bright = 1.0;
       if(bright > 100.0) bright = 100.0;
       return(round(bright));
