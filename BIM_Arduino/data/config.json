@@ -70,7 +70,7 @@
 			"max": 255
 		},
 		"lightSensor": 2,
-		"sensitivity": 21,
+		"sensitivity": 28,
 		"source": {
 			"tempOut": {
 				"sens": 1,
