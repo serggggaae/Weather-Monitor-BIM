@@ -47,7 +47,7 @@
 		"cityid": 0,
 		"lat": 50.38392205335758,
 		"lon": 30.447583507375462,
-		"provider": 0,
+		"provider": 1,
 		"citysearch": 0,
 		"parsingServer": ""
 	},
@@ -70,7 +70,7 @@
 			"max": 255
 		},
 		"lightSensor": 2,
-		"sensitivity": 19,
+		"sensitivity": 21,
 		"source": {
 			"tempOut": {
 				"sens": 1,
